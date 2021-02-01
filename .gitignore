@@ -1,0 +1,9 @@
+*/.*
+*/logs/*
+*/target/*
+*.iml
+*/.idea/*
+*/output/*
+*/out/*
+*/classes/*
+.idea/
