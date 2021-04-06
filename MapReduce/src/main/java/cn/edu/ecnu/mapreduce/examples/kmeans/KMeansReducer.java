@@ -8,7 +8,7 @@ import org.apache.hadoop.io.NullWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Reducer;
 
-/* 步骤1：确定输出键值对[K2,V2]的数据类型为[IntWritable,Text] ,确定输出键值对[K3,V3]的数据类型为[Text,NullWritable] */
+/* 步骤1：确定输出键值对[K2,V2]的数据类型为[Text,Text] ,确定输出键值对[K3,V3]的数据类型为[Text,NullWritable] */
 public class KMeansReducer extends Reducer<Text, Text, Text, NullWritable> {
 
   @Override
