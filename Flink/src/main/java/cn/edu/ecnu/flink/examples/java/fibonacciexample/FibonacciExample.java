@@ -73,7 +73,7 @@ public class FibonacciExample {
                 new FilterFunction<Tuple3<Character, Long, Long>>() {
                   @Override
                   public boolean filter(Tuple3<Character, Long, Long> value) throws Exception {
-                    return value.f2 != Long.MIN_VALUE;
+                    return value.f2 == Long.MIN_VALUE;
                   }
                 })
             .map(
