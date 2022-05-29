@@ -53,7 +53,7 @@ public class FibonacciExample {
                 out.collect(feedbackValue);
                 out.collect(outputValue);
               }
-            });
+            }).setParallelism(2);
     // |创建反馈流|
     // |选择第三位置不为Min的元组，例如(A, 2, 3)|
     DataStream<Tuple3<Character, Long, Long>> feedback =
